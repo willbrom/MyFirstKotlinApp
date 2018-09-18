@@ -6,6 +6,8 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 
+import kotlinx.android.synthetic.main.activity_main.textView_count
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,14 +23,13 @@ class MainActivity : AppCompatActivity() {
     fun countMe(view: View) {
 
         // get the value from textView
-        val countTextView = findViewById<TextView>(R.id.textView_count) as TextView
-        val countString = countTextView.text.toString()
+        val countString = textView_count.text.toString()
 
         // convert value to an integer and increment it
         var count: Int = Integer.parseInt(countString)
         count++
 
         // set the new value to textView
-        countTextView.text = count.toString()
+        textView_count.text = count.toString()
     }
 }
