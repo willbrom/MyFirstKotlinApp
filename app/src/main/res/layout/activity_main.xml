@@ -56,6 +56,7 @@
         android:layout_marginStart="24dp"
         android:background="@color/colorButtonBg"
         android:text="@string/random_button"
+        android:onClick="randomMe"
         app:layout_constraintBottom_toBottomOf="@+id/button_count"
         app:layout_constraintStart_toEndOf="@+id/button_count"
         app:layout_constraintTop_toTopOf="@+id/button_count" />

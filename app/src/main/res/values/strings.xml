@@ -5,4 +5,6 @@
     <string name="count_button">Count</string>
     <string name="random_button">Random</string>
     <string name="toast_message">Hello World, from Kotlin</string>
+    <string name="random_text">Here is a number between 0 and %1d</string>
+    <string name="random_count_text">R</string>
 </resources>
